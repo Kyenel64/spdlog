@@ -5,6 +5,8 @@
 //
 // For the license information refer to format.h.
 
+#pragma warning (disable : 26450 26498)
+
 #ifndef FMT_FORMAT_INL_H_
 #define FMT_FORMAT_INL_H_
 
@@ -1389,7 +1391,7 @@ small_divisor_case_label:
   // or equivalently, when y is an integer.
   if (y_mul.parity != approx_y_parity)
     --ret_value.significand;
-  else if (y_mul.is_integer & (ret_value.significand % 2 != 0))
+  else if (y_mul.is_integer && (ret_value.significand % 2 != 0))
     --ret_value.significand;
   return ret_value;
 }

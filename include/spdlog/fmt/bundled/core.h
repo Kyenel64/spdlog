@@ -5,7 +5,7 @@
 //
 // For the license information refer to format.h.
 
-#pragma warning (disable : 6285 26437 26450 26498 26495)
+#pragma warning (disable : 6285 26437 26450 26498 26495 26451)
 #pragma warning (push, 0)
 
 #ifndef FMT_CORE_H_
